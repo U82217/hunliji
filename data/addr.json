@@ -1,0 +1,128 @@
+{
+    "addrlist":["推荐","广东","北京","河北","山西","内蒙古","辽宁","吉林","黑龙江","上海",
+        "江苏","浙江","安徽","福建","江西","山东","河南","湖北","湖南","天津","广西","海南","重庆",
+        "四川","贵州","云南","西藏","陕西","甘肃","青海","宁夏","新疆","台湾","香港","澳门","海外"
+    ],
+    "hotcity":[
+        {
+            "city":"杭州",
+            "bg":""
+        },
+        {
+            "city":"北京",
+            "bg":""
+        },
+        {
+            "city":"上海",
+            "bg":""
+        },
+        {
+            "city":"深圳",
+            "bg":""
+        },
+        {
+            "city":"西安",
+            "bg":""
+        },
+        {
+            "city":"成都",
+            "bg":""
+        },
+        {
+            "city":"广州",
+            "bg":""
+        },
+
+        {
+            "city":"武汉",
+            "bg":""
+        },
+        {
+            "city":"南京",
+            "bg":""
+        },
+        {
+            "city":"重庆",
+            "bg":""
+        },
+        {
+            "city":"苏州",
+            "bg":""
+        },
+        {
+            "city":"天津",
+            "bg":""
+        },
+        {
+            "city":"厦门",
+            "bg":{
+                "backgroundImage": "url('./data/images/addrbg.png')",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "contain"
+              }
+        },
+        {
+            "city":"三亚",
+            "bg":{
+                "backgroundImage":"url('./data/images/addrbg.png')",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "contain"
+              }
+        },
+        {
+            "city":"长沙",
+            "bg":""
+        },
+        {
+            "city":"郑州",
+            "bg":""
+        },
+        {
+            "city":"青岛",
+            "bg":{
+                "backgroundImage":"url('./data/images/addrbg.png')",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "contain"
+              }
+        },
+        {
+            "city":"丽江",
+            "bg":{
+                "backgroundImage":"url('./data/images/addrbg.png')",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "contain"
+              }
+        },
+        {
+            "city":"大理",
+            "bg":{
+                "backgroundImage":"url('./data/images/addrbg.png')",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "contain"
+              }
+        },
+        {
+            "city":"沈阳",
+            "bg":""
+        },
+        {
+            "city":"昆明",
+            "bg":""
+        },
+        {
+            "city":"合肥",
+            "bg":""
+        },
+        {
+            "city":"大连",
+            "bg":{
+                "backgroundImage":"url('./data/images/addrbg.png')",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "contain"
+              }
+        }
+    ],
+    "gd":["广州市","韶关市","深圳市","珠海市","汕头市","佛山市","江门市","湛江市","茂名市","肇庆市","惠州市","梅州市","汕尾市","河源市","阳江市","清远市","东莞市","中山市","东沙群岛",""
+
+    ]
+}
