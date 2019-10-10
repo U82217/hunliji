@@ -159,17 +159,17 @@
       "src":"./data/images/go1.jpg",
       "title":"韩式清新显瘦百变伴娘服",
       "size":"A款，蓝灰色，M",
-      "price":"￥118",
+      "price":"118",
       "deprice":"￥198",
-      "num":0
+      "num":1
     },
     {
-      "src":"./data/images/go1.jpg",
-      "title":"韩式清新显瘦百变伴娘服",
-      "size":"A款，蓝灰色，M",
-      "price":"￥118",
-      "deprice":"￥198",
-      "num":0
+      "src":"./data/images/go2.jpg",
+      "title":"锦绣系列•凤凰中式秀禾服",
+      "size":"规格：奢华百褶加钻",
+      "price":"457",
+      "deprice":"￥508",
+      "num":1
     }
   ]
 }
