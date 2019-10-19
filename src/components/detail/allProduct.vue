@@ -23,21 +23,20 @@
 
 <script>
 export default {
-  data(){
-    return{
-      allList:''
+  data() {
+    return {
+      allList: ''
     }
   },
-  mounted(){
+  mounted() {
     this.$http.get('./data/products.json')
-    .then((response)=>{
-    this.allList=response.data.allList;
-    })
-    .catch(function (error) {
-    console.log(error);
-    })
-    .then(function () {
-    });
+      .then((response) => {
+        this.allList = response.data.allList;
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
+      .then(function() {});
   }
 }
 </script>

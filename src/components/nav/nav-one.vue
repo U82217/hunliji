@@ -1,20 +1,19 @@
 <template>
-<!-- <router-view></router-view> -->
-<div class="nav">
-  <div>
-    <img src="../../assets/images/logo1.png" alt="" class="logo">
+  <div class="nav">
+    <div>
+      <img src="../../assets/images/logo1.png" alt="" class="logo">
+    </div>
+    <div>
+      <router-link to="/nationwide" class="area">{{this.$store.state.addr}}</router-link>
+    </div>
+    <div class="nav-bar" @click="showbar()"></div>
+    <div @touchmove.prevent>
+      <mt-popup v-model="popupVisible" position="" modal=false :lockScroll='true'>
+          <navbar></navbar>
+      </mt-popup>
+    </div>
+    <router-view></router-view>
   </div>
-  <div>
-    <!-- <router-link to="/nationwide" class="area">{{this.$store.state.addr[i]}}</router-link> -->
-    <router-link to="/nationwide" class="area">{{this.$store.state.addr}}</router-link>
-
-  </div>
-  <div class="nav-bar" @click="showbar()"></div>
-  <mt-popup v-model="popupVisible" position="" modal=false>
-    <navbar></navbar>
-  </mt-popup>
-  <router-view></router-view>
-</div>
 </template>
 <script>
 import navbar from './nav-all.vue';

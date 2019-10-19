@@ -4,7 +4,6 @@
 			<mt-search autofocus v-model="value" placeholder="搜索你想要的商品"></mt-search>
       <router-link to="/mycar" class="iconfont icon-gouwuche"></router-link>
     </div>
-
     <!-- buy banner -->
     <div id="buy-banner">
       	<!-- swiper -->
@@ -47,17 +46,17 @@
 import all from './allProduct.vue';
 export default {
   components: {
-    'all':all,
+    'all': all,
   },
-  data(){
-    return{
-      value:'',
-      blist:'',
-      blist1:'',
-      bnav:['全部','本周新品'],
-      msg:'all',
-      msgs:['all','all'],
-      active:0,
+  data() {
+    return {
+      value: '',
+      blist: '',
+      blist1: '',
+      bnav: ['全部', '本周新品'],
+      msg: 'all',
+      msgs: ['all', 'all'],
+      active: 0,
       swiperOption: {
         loop: true,
         centeredSlides: true,
@@ -72,50 +71,55 @@ export default {
       }
     }
   },
-  methods:{
-    change(index){
-      	this.active=index;
+  methods: {
+    change(index) {
+      this.active = index;
     }
   },
-  mounted(){
+  mounted() {
     this.$http.get('./data/buy.json')
-    .then((response)=>{
-    this.blist=response.data.blist;
-    this.blist1=response.data.blist1;
-    })
-    .catch(function (error) {
-    console.log(error);
-    })
-    .then(function () {
-    });
+      .then((response) => {
+        this.blist = response.data.blist;
+        this.blist1 = response.data.blist1;
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
+      .then(function() {});
   }
 }
 </script>
 <style media="screen">
-.buy-body .mint-search{
+.buy-body .mint-search {
   width: 90%;
   height: 56px;
 }
-.buy-body .mint-searchbar{
+
+.buy-body .mint-searchbar {
   background-color: #fff;
   font-size: 0.777rem;
   padding: 10px 16px 12px;
 }
-.buy-body .mint-searchbar-inner{
+
+.buy-body .mint-searchbar-inner {
   background: #f2f3f7;
   height: 25px;
 }
-.buy-body .mint-searchbar-inner .mintui-search{
+
+.buy-body .mint-searchbar-inner .mintui-search {
   font-size: 0.888rem;
   color: #777777;
 }
-.buy-body .mint-searchbar-core{
+
+.buy-body .mint-searchbar-core {
   background: #f2f3f7;
   padding-left: 6px;
 }
-.buy-body .mint-searchbar-cancel{
+
+.buy-body .mint-searchbar-cancel {
   color: #333333;
 }
+
 #buy-banner .swiper-pagination-bullet-active {
   opacity: 1;
   background: #fff;
@@ -137,47 +141,55 @@ export default {
 }
 </style>
 <style scoped="">
-.buy-list1 span{
+.buy-list1 span {
   display: block;
   font-size: 0.66rem;
   text-align: center;
   margin-bottom: 16px;
   color: #666;
 }
-.buy-list1{
-  margin:14px 0 0;
+
+.buy-list1 {
+  margin: 14px 0 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.buy-list1 li{
- width:25%;
+
+.buy-list1 li {
+  width: 25%;
 }
-.buy-list1 li img{
+
+.buy-list1 li img {
   width: 60%;
 }
-.buy-box{
-  background:#f2f3f7;
-  padding:10px 0 0;
+
+.buy-box {
+  background: #f2f3f7;
+  padding: 10px 0 0;
 }
-.buy-box1{
+
+.buy-box1 {
   background: #fff;
-  padding:10px 0px 0;
+  padding: 10px 0px 0;
 }
-.bnav{
+
+.bnav {
   display: flex;
   font-size: 0.777rem;
   color: #606060;
   border-bottom: 1px solid #ccc;
   justify-content: space-between;
-  padding:0 16px 8px;
+  padding: 0 16px 8px;
 }
-.dtab-list li{
+
+.dtab-list li {
   margin-right: 20px;
 }
-.buyadd{
+
+.buyadd {
   color: #f83244;
   padding-bottom: 8px;
-  border-bottom:2px solid #f83244;
+  border-bottom: 2px solid #f83244;
 }
 </style>

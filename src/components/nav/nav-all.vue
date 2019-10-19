@@ -17,9 +17,6 @@ export default {
       navs: ''
     }
   },
-  methods: {
-
-  },
   mounted() {
     this.$http.get('./data/navbar.json')
       .then((response) => {

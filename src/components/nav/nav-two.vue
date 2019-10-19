@@ -1,21 +1,21 @@
 <template>
-<div class="nav-two">
-  <div class="nav2-img">
-    <img src="../../assets/images/logo1.png" alt="" class="logo">
+  <div class="nav-two">
+    <div class="nav2-img">
+      <img src="../../assets/images/logo1.png" alt="" class="logo">
+    </div>
+    <div>
+      <router-link to="/nationwide" class="area">{{this.$store.state.addr}}</router-link>
+    </div>
+    <div class="nav2-search">
+      <mt-search autofocus v-model="value" :result="filterResult" placeholder="搜索风格、元素和商家">
+      </mt-search>
+    </div>
+    <div class="nav-bar" @click="showbar()"></div>
+    <mt-popup v-model="popupVisible" position="" modal=false>
+      <navbar></navbar>
+    </mt-popup>
+    <router-view></router-view>
   </div>
-  <div>
-    <router-link to="/nationwide" class="area">{{this.$store.state.addr}}</router-link>
-  </div>
-  <div class="nav2-search">
-    <mt-search autofocus v-model="value" :result="filterResult" placeholder="搜索风格、元素和商家">
-    </mt-search>
-  </div>
-  <div class="nav-bar" @click="showbar()"></div>
-  <mt-popup v-model="popupVisible" position="" modal=false>
-    <navbar></navbar>
-  </mt-popup>
-  <router-view></router-view>
-</div>
 </template>
 <script>
 import navbar from './nav-all.vue';

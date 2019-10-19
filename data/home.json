@@ -1,319 +1,312 @@
 {
-	"pros":[
-		     {
-            "src":"./data/images/banner1.jpg"
-          },
-          {
-            "src":"./data/images/banner2.jpg"
-          },
-          {
-            "src":"./data/images/banner3.jpg"
-          },
-          {
-            "src":"./data/images/banner4.jpg"
-          },
-          {
-            "src":"./data/images/banner5.jpg"
-          },
-          {
-            "src":"./data/images/banner6.jpg"
-          }
-  ],
-
-  "navs":[
-    {
-      "src":"./data/images/hnav1.png",
-      "title":"找商家",
-			"path":"/find"
+  "pros": [{
+      "src": "./data/images/banner1.jpg"
     },
     {
-      "src":"./data/images/hnav2.png",
-      "title":"订婚宴",
-			"path":"/find"
+      "src": "./data/images/banner2.jpg"
     },
     {
-      "src":"./data/images/hnav3.png",
-      "title":"旅拍商城",
-			"path":"/store"
+      "src": "./data/images/banner3.jpg"
     },
     {
-      "src":"./data/images/hnav4.png",
-      "title":"淘婚品",
-			"path":"/buy_product"
+      "src": "./data/images/banner4.jpg"
     },
     {
-      "src":"./data/images/hnav5.png",
-      "title":"跟妆",
-			"path":"/find"
+      "src": "./data/images/banner5.jpg"
     },
     {
-      "src":"./data/images/hnav6.png",
-      "title":"婚礼策划",
-			"path":"/find"
-    },
-    {
-      "src":"./data/images/hnav7.png",
-      "title":"婚礼摄影",
-			"path":"/find"
-    },
-    {
-      "src":"./data/images/hnav8.png",
-      "title":"婚纱礼服",
-			"path":"/find"
-    },
-    {
-      "src":"./data/images/hnav9.png",
-      "title":"案例",
-			"path":"/find"
-    },
-    {
-      "src":"./data/images/hnav10.png",
-      "title":"司仪",
-			"path":"/find"
-    }
-  ],
-  "citys":[
-    {
-      "city":"上海",
-      "path":""
-    },
-    {
-      "city":"济南",
-      "path":""
-    },
-    {
-      "city":"武汉",
-      "path":""
-    },
-    {
-      "city":"厦门",
-      "path":""
-    },
-    {
-      "city":"大连",
-      "path":""
-    },
-    {
-      "city":"长沙",
-      "path":""
-    },
-    {
-      "city":"重庆",
-      "path":""
-    },
-    {
-      "city":"合肥",
-      "path":""
-    },
-    {
-      "city":"三亚",
-      "path":""
-    },
-    {
-      "city":"丽江",
-      "path":""
-    },
-    {
-      "city":"北京",
-      "path":""
-    },
-    {
-      "city":"全部",
-      "path":"/nationwide"
+      "src": "./data/images/banner6.jpg"
     }
   ],
 
-  "list1":[
-    {
-      "src":"./data/images/hs1.jpg",
-      "title":"巴黎春天婚纱摄影",
-      "bg":{
-          "backgroundImage": "url('./data/images/star.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain",
-          "marginTop": "5px",
-          "backgroundPosition":"0 0"
-        },
-      "comments":"23条评价"
+  "navs": [{
+      "src": "./data/images/hnav1.png",
+      "title": "找商家",
+      "path": "/find"
     },
     {
-      "src":"./data/images/hs2.jpg",
-      "title":"蒙娜丽莎全球旅拍婚纱摄影",
-      "bg":{
-          "backgroundImage": "url('./data/images/star.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain",
-          "marginTop": "5px",
-          "backgroundPosition":"0 0"
-        },
-      "comments":"300条评价"
+      "src": "./data/images/hnav2.png",
+      "title": "订婚宴",
+      "path": "/find"
     },
     {
-      "src":"./data/images/hs3.jpg",
-      "title":"维纳斯国际婚纱摄影",
-      "bg":{
-          "backgroundImage": "url('./data/images/star.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain",
-          "marginTop": "5px",
-          "backgroundPosition":"0 0"
-        },
-      "comments":"734条评价"
+      "src": "./data/images/hnav3.png",
+      "title": "旅拍商城",
+      "path": "/store"
     },
     {
-      "src":"./data/images/hs4.jpg",
-      "title":"天长地久婚纱摄影",
-      "bg":{
-          "backgroundImage": "url('./data/images/star.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain",
-          "marginTop": "5px",
-          "backgroundPosition":"0 0"
-        },
-      "comments":"1条评价"
+      "src": "./data/images/hnav4.png",
+      "title": "淘婚品",
+      "path": "/buy_product"
     },
     {
-      "src":"./data/images/hs5.jpg",
-      "title":"北京纽约纽约时尚婚纱摄影",
-      "bg":{
-          "backgroundImage": "url('./data/images/star.png')",
-          "backgroundSize": "contain"
-        },
-      "comments":"1条评价"
+      "src": "./data/images/hnav5.png",
+      "title": "跟妆",
+      "path": "/find"
     },
     {
-      "src":"./data/images/hs6.jpg",
-      "title":"古摄影全球旅拍西北总店",
-      "bg":{
-          "backgroundImage": "url('./data/images/star.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain",
-          "marginTop": "5px",
-          "backgroundPosition":"0 0"
-        },
-      "comments":"10条评价"
+      "src": "./data/images/hnav6.png",
+      "title": "婚礼策划",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/hnav7.png",
+      "title": "婚礼摄影",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/hnav8.png",
+      "title": "婚纱礼服",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/hnav9.png",
+      "title": "案例",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/hnav10.png",
+      "title": "司仪",
+      "path": "/find"
+    }
+  ],
+  "citys": [{
+      "city": "上海",
+      "path": ""
+    },
+    {
+      "city": "济南",
+      "path": ""
+    },
+    {
+      "city": "武汉",
+      "path": ""
+    },
+    {
+      "city": "厦门",
+      "path": ""
+    },
+    {
+      "city": "大连",
+      "path": ""
+    },
+    {
+      "city": "长沙",
+      "path": ""
+    },
+    {
+      "city": "重庆",
+      "path": ""
+    },
+    {
+      "city": "合肥",
+      "path": ""
+    },
+    {
+      "city": "三亚",
+      "path": ""
+    },
+    {
+      "city": "丽江",
+      "path": ""
+    },
+    {
+      "city": "北京",
+      "path": ""
+    },
+    {
+      "city": "全部",
+      "path": "/nationwide"
     }
   ],
 
-  "list2":[
-    {
-      "title":"电子请帖",
-      "des":"免费制作",
-      "bg":{
-          "backgroundImage": "url('./data/images/to1.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain"
-        }
+  "list1": [{
+      "src": "./data/images/hs1.jpg",
+      "title": "巴黎春天婚纱摄影",
+      "bg": {
+        "backgroundImage": "url('./data/images/star.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "marginTop": "5px",
+        "backgroundPosition": "0 0"
+      },
+      "comments": "23条评价"
     },
     {
-      "title":"结婚吉日",
-      "des":"合婚择日",
-      "bg":{
-          "backgroundImage": "url('./data/images/to2.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain"
-        }
+      "src": "./data/images/hs2.jpg",
+      "title": "蒙娜丽莎全球旅拍婚纱摄影",
+      "bg": {
+        "backgroundImage": "url('./data/images/star.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "marginTop": "5px",
+        "backgroundPosition": "0 0"
+      },
+      "comments": "300条评价"
     },
     {
-      "title":"婚姻登记处",
-      "des":"领证必备",
-      "bg":{
-          "backgroundImage": "url('./data/images/to3.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain"
-        }
+      "src": "./data/images/hs3.jpg",
+      "title": "维纳斯国际婚纱摄影",
+      "bg": {
+        "backgroundImage": "url('./data/images/star.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "marginTop": "5px",
+        "backgroundPosition": "0 0"
+      },
+      "comments": "734条评价"
     },
     {
-      "title":"结婚任务",
-      "des":"搞怪有趣",
-      "bg":{
-          "backgroundImage": "url('./data/images/to4.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain"
-        }
+      "src": "./data/images/hs4.jpg",
+      "title": "天长地久婚纱摄影",
+      "bg": {
+        "backgroundImage": "url('./data/images/star.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "marginTop": "5px",
+        "backgroundPosition": "0 0"
+      },
+      "comments": "1条评价"
     },
     {
-      "title":"婚礼歌曲",
-      "des":"温馨祝福",
-      "bg":{
-          "backgroundImage": "url('./data/images/to5.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain"
-        }
+      "src": "./data/images/hs5.jpg",
+      "title": "北京纽约纽约时尚婚纱摄影",
+      "bg": {
+        "backgroundImage": "url('./data/images/star.png')",
+        "backgroundSize": "contain"
+      },
+      "comments": "1条评价"
     },
     {
-      "title":"婚礼流程",
-      "des":"婚前必看",
-      "bg":{
-          "backgroundImage": "url('./data/images/to6.png')",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "contain"
-        }
+      "src": "./data/images/hs6.jpg",
+      "title": "古摄影全球旅拍西北总店",
+      "bg": {
+        "backgroundImage": "url('./data/images/star.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain",
+        "marginTop": "5px",
+        "backgroundPosition": "0 0"
+      },
+      "comments": "10条评价"
+    }
+  ],
+
+  "list2": [{
+      "title": "电子请帖",
+      "des": "免费制作",
+      "bg": {
+        "backgroundImage": "url('./data/images/to1.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain"
+      }
+    },
+    {
+      "title": "结婚吉日",
+      "des": "合婚择日",
+      "bg": {
+        "backgroundImage": "url('./data/images/to2.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain"
+      }
+    },
+    {
+      "title": "婚姻登记处",
+      "des": "领证必备",
+      "bg": {
+        "backgroundImage": "url('./data/images/to3.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain"
+      }
+    },
+    {
+      "title": "结婚任务",
+      "des": "搞怪有趣",
+      "bg": {
+        "backgroundImage": "url('./data/images/to4.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain"
+      }
+    },
+    {
+      "title": "婚礼歌曲",
+      "des": "温馨祝福",
+      "bg": {
+        "backgroundImage": "url('./data/images/to5.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain"
+      }
+    },
+    {
+      "title": "婚礼流程",
+      "des": "婚前必看",
+      "bg": {
+        "backgroundImage": "url('./data/images/to6.png')",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "contain"
+      }
     }
 
   ],
 
-  "photos":[
-    {
-      "src":"./data/images/ph2.jpg",
-      "title":"小清新婚礼布置"
+  "photos": [{
+      "src": "./data/images/ph2.jpg",
+      "title": "小清新婚礼布置"
     },
     {
-      "src":"./data/images/ph3.jpg",
-      "title":"个性婚纱照"
+      "src": "./data/images/ph3.jpg",
+      "title": "个性婚纱照"
     },
     {
-      "src":"./data/images/ph4.jpg",
-      "title":"韩式婚纱照"
+      "src": "./data/images/ph4.jpg",
+      "title": "韩式婚纱照"
     }
   ],
 
-  "guides":[
-    {
-      "src":"./data/images/gl01.jpg",
-      "title":"生日当天可以领结婚证吗 生日和领证日在同一天好吗",
-      "time":"2019-09-26 18:18:31",
-      "bg":{
+  "guides": [{
+      "src": "./data/images/gl01.jpg",
+      "title": "生日当天可以领结婚证吗 生日和领证日在同一天好吗",
+      "time": "2019-09-26 18:18:31",
+      "bg": {
         "backgroundImage": "url('./data/images/go.png')",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "contain"
       }
     },
     {
-      "src":"./data/images/gl02.jpg",
-      "title":"生日派对上求婚好吗 生日求婚派对的布置指南",
-      "time":"2019-09-26 18:16:33",
-      "bg":{
+      "src": "./data/images/gl02.jpg",
+      "title": "生日派对上求婚好吗 生日求婚派对的布置指南",
+      "time": "2019-09-26 18:16:33",
+      "bg": {
         "backgroundImage": "url('./data/images/go.png')",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "contain"
       }
     },
     {
-      "src":"./data/images/gl03.jpg",
-      "title":"婚礼短片文案美句",
-      "time":"2018-08-29 16:09:05",
-      "bg":{
+      "src": "./data/images/gl03.jpg",
+      "title": "婚礼短片文案美句",
+      "time": "2018-08-29 16:09:05",
+      "bg": {
         "backgroundImage": "url('./data/images/go.png')",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "contain"
       }
     },
     {
-      "src":"./data/images/gl04.jpg",
-      "title":"2019结婚新郎唱的歌曲 送给新娘的10首情歌告白",
-      "time":"2019-04-17 18:13:21",
-      "bg":{
+      "src": "./data/images/gl04.jpg",
+      "title": "2019结婚新郎唱的歌曲 送给新娘的10首情歌告白",
+      "time": "2019-04-17 18:13:21",
+      "bg": {
         "backgroundImage": "url('./data/images/go.png')",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "contain"
       }
     },
     {
-      "src":"./data/images/gl05.jpg",
-      "title":"新娘父亲婚礼致辞简短大气",
-      "time":"2019-08-21 16:19:57",
-      "bg":{
+      "src": "./data/images/gl05.jpg",
+      "title": "新娘父亲婚礼致辞简短大气",
+      "time": "2019-08-21 16:19:57",
+      "bg": {
         "backgroundImage": "url('./data/images/go.png')",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "contain"

@@ -22,9 +22,9 @@
 
 <script>
 export default {
-  data(){
-    return{
-      products:''
+  data() {
+    return {
+      products: ''
     }
   },
   mounted() {

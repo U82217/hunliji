@@ -12,8 +12,6 @@ export default new Vuex.Store({
         },
         mutations:{
         target(state,v){
-          // var add=['上海','济南','武汉','厦门','大连','长沙','重庆','合肥','三亚','丽江','北京']
-          //  state.addr=add[i]
           state.addr=v;
           state.addr1=v;
           state.addr2=state.addr2+v;

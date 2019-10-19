@@ -14,21 +14,20 @@
 
 <script>
 export default {
-  data(){
-    return{
-      classify:''
+  data() {
+    return {
+      classify: ''
     }
   },
-  mounted(){
+  mounted() {
     this.$http.get('./data/navbar.json')
-    .then((response)=>{
-    this.classify=response.data.classify;
-    })
-    .catch(function (error) {
-    console.log(error);
-    })
-    .then(function () {
-    });
+      .then((response) => {
+        this.classify = response.data.classify;
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
+      .then(function() {});
   }
 }
 </script>

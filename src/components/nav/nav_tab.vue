@@ -22,65 +22,89 @@ export default {
   data() {
     return {
       ntlis: ['全部', '区域', '综合排序', '筛选'],
-      tabMain: [
-        {
-          newList:[
-            {title:'全部'},
-            {title:'婚纱摄影'},
-            {title:'婚礼策划'},
-            {title:'婚纱礼服'},
-            {title:'婚宴酒店'},
-            {title:'花艺甜品'},
-            {title:'婚礼摄影'},
-            {title:'婚礼摄像'}
+      tabMain: [{
+          newList: [{
+              title: '全部'
+            },
+            {
+              title: '婚纱摄影'
+            },
+            {
+              title: '婚礼策划'
+            },
+            {
+              title: '婚纱礼服'
+            },
+            {
+              title: '婚宴酒店'
+            },
+            {
+              title: '花艺甜品'
+            },
+            {
+              title: '婚礼摄影'
+            },
+            {
+              title: '婚礼摄像'
+            }
           ]
         },
         {
-          newList:[
-            {title:'区域'}
+          newList: [{
+            title: '区域'
+          }]
+        },
+        {
+          newList: [{
+              title: '综合排序'
+            },
+            {
+              title: '喜欢最多'
+            },
+            {
+              title: '作品最多'
+            }
           ]
         },
         {
-          newList:[
-            {title:'综合排序'},
-            {title:'喜欢最多'},
-            {title:'作品最多'}
-          ]
-        },
-        {
-          newList:[
-            {title:'服务与保障（可多选）'},
-            {title:'保证金商家'},
-            {title:'高等级商家'}
+          newList: [{
+              title: '服务与保障（可多选）'
+            },
+            {
+              title: '保证金商家'
+            },
+            {
+              title: '高等级商家'
+            }
           ]
         }
       ],
       cur: -1,
-      whether:false,
-      hshow:true
+      whether: false,
+      hshow: true
     }
   },
   methods: {
     handleScroll() {
       var scrollTop =
         window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      if(scrollTop>150){
+      if (scrollTop > 150) {
         this.whether = true;
-      }else{
+      } else {
         this.whether = false;
       }
     },
     tab(index) {
-        this.cur = index;
-        this.hshow=!this.hshow;
+      this.cur = index;
+      this.hshow = !this.hshow;
     }
   },
   mounted() {
     $('.nt-list li').click(function() {
-      $(this).children('i').toggleClass('arrow1').parent().siblings().children('i').removeClass('arrow1');
-      $('.tab-bg').toggle();
-    }),
-    window.addEventListener("scroll", this.handleScroll);
+        $(this).children('i').toggleClass('arrow1').parent().siblings().children('i').removeClass('arrow1');
+        $('.tab-bg').toggle();
+      }),
+      window.addEventListener("scroll", this.handleScroll);
   }
 
 }

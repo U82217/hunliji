@@ -26,7 +26,6 @@
           </div>
           <div class="gright">
             <span class="iconfont icon-jian del" @click="del(i)"></span>
-            <!-- <span>{this.$store.state.num}</span> -->
             <input type="number" :value="v.num" class="gr-input">
             <span class="iconfont icon-jia add"  @click="add(i)"></span>
           </div>
@@ -40,7 +39,6 @@
   </div>
   <footer class="car-footer">
     <div class="all-select">
-      <!-- <span :class="{'iconfont':true,'icon-danxuankuang':true,'mactive':checkbox[0]&&checkbox[1],'mactive':selectAll}" @click="select()"></span> -->
       <span :class="{'iconfont':true,'icon-danxuankuang':true,'mactive':selectAll,'mactive':checkbox[0]&&checkbox[1]}" @click="select()"></span>
       <span>全选</span>
       <span class="sum">合计：￥{{total}}</span>
@@ -53,64 +51,63 @@
 <script>
 import goods from './../detail/allProduct.vue';
 export default {
-  components:{
-    'goods':goods
+  components: {
+    'goods': goods
   },
-  data(){
-    return{
-      show:true,
-      checkbox:[false,false],
-      selectAll:false,
-      carlis:'',
-      total:0.0,
-      allnum:0,
+  data() {
+    return {
+      show: true,
+      checkbox: [false, false],
+      selectAll: false,
+      carlis: '',
+      total: 0.0,
+      allnum: 0,
       a: 0
     }
   },
-  methods:{
-    add(i){
-       this.carlis[i].num++;
-       this.sum();
+  methods: {
+    add(i) {
+      this.carlis[i].num++;
+      this.sum();
     },
-    del(i){
-      var count=this.carlis[i].num;
-      if(count>1){
-        this.carlis[i].num=count-1;
+    del(i) {
+      var count = this.carlis[i].num;
+      if (count > 1) {
+        this.carlis[i].num = count - 1;
       }
       this.sum();
     },
-    sum(){
-      this.total=0.0;
-      this.allnum=0;
-      for(var i=0;i<this.carlis.length;i++){
-        if(this.checkbox[i]){
-           this.total += this.carlis[i].price * this.carlis[i].num;
-           this.allnum += this.carlis[i].num;
+    sum() {
+      this.total = 0.0;
+      this.allnum = 0;
+      for (var i = 0; i < this.carlis.length; i++) {
+        if (this.checkbox[i]) {
+          this.total += this.carlis[i].price * this.carlis[i].num;
+          this.allnum += this.carlis[i].num;
         }
       }
     },
-    mydelete(i){
-      this.carlis.splice(i,1);
+    mydelete(i) {
+      this.carlis.splice(i, 1);
       this.sum();
     },
     change(i) {
-      this.checkbox[i]=!this.checkbox[i];
+      this.checkbox[i] = !this.checkbox[i];
       this.a++;
-      if(this.checkbox[i]){
-         this.sum();
-      }else{
-        this.carlis[i].price * this.carlis[i].num==0;
-         this.sum();
+      if (this.checkbox[i]) {
+        this.sum();
+      } else {
+        this.carlis[i].price * this.carlis[i].num == 0;
+        this.sum();
       }
     },
-    select(){
-      this.selectAll=!this.selectAll;
-      for(var i=0;i<this.carlis.length;i++){
-        if(this.selectAll){
-          this.checkbox[i]=true;
-        }
-        else{
-          this.checkbox[i]=false;
+    select() {
+      this.selectAll = !this.selectAll;
+      for (var i = 0; i < this.carlis.length; i++) {
+        if (this.selectAll) {
+          this.checkbox[i] = true;
+        } else {
+          this.checkbox[i] = false;
         }
       }
       this.sum();
@@ -125,7 +122,7 @@ export default {
         console.log(error);
       })
       .then(function() {});
-      this.sum();
+    this.sum();
   }
 }
 </script>

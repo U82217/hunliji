@@ -8,42 +8,42 @@
     <ul class="lis1">
       <li v-for="(item,index) in flist">
         <router-link :to="item.path" class="lis-router">
-					<div class="fleft">
-	          <img :src="item.src1" alt="">
-	        </div>
-	        <div class="fright">
-	          <div class="">
-	            <img :src="item.src2" alt="" class="img1">
-	            <span class="fr-span">{{item.title}}</span>
-	            <div class="fr-img">
-	              <img :src="item.src3" alt="" class="img2">
-	            </div>
-	          </div>
-	          <div class="fr2">
-	            <ul class="fr2-list">
-	              <li v-for="(v,i) in stars">
-	                <img :src="v.src" alt="">
-	              </li>
-	            </ul>
-	            <span class="num">{{item.num}}</span>
-	            <img :src="item.src4" alt="" class="img3">
-	          </div>
-	          <div class="fr3">
-	            <ul class="fr3-list">
-	              <li v-for="(v,i) in relist">
-	                {{v}}
-	              </li>
-	            </ul>
-	          </div>
-	          <div class="fr4">
-	            <span class="faddr">{{item.faddr}}</span>
-	            <span class="fprovince">{{item.fprovince}}</span>
-	          </div>
-						<div class="fr5">
-							<span class="gift">{{item.gift}}</span>
-							<span class="gifttip">{{item.gifttip}}</span>
-						</div>
-	        </div>
+          <div class="fleft">
+            <img :src="item.src1" alt="">
+          </div>
+          <div class="fright">
+            <div class="">
+              <img :src="item.src2" alt="" class="img1">
+              <span class="fr-span">{{item.title}}</span>
+              <div class="fr-img">
+                <img :src="item.src3" alt="" class="img2">
+              </div>
+            </div>
+            <div class="fr2">
+              <ul class="fr2-list">
+                <li v-for="(v,i) in stars">
+                  <img :src="v.src" alt="">
+                </li>
+              </ul>
+              <span class="num">{{item.num}}</span>
+              <img :src="item.src4" alt="" class="img3">
+            </div>
+            <div class="fr3">
+              <ul class="fr3-list">
+                <li v-for="(v,i) in relist">
+                  {{v}}
+                </li>
+              </ul>
+            </div>
+            <div class="fr4">
+              <span class="faddr">{{item.faddr}}</span>
+              <span class="fprovince">{{item.fprovince}}</span>
+            </div>
+            <div class="fr5">
+              <span class="gift">{{item.gift}}</span>
+              <span class="gifttip">{{item.gifttip}}</span>
+            </div>
+          </div>
         </router-link>
       </li>
     </ul>
@@ -67,9 +67,6 @@ export default {
       stars: '',
       relist: ''
     }
-  },
-  methods: {
-
   },
   mounted() {
     this.$http.get('./data/find.json')
@@ -100,8 +97,9 @@ export default {
   padding: 16px 0 17px;
   position: relative;
 }
-.lis-router{
-	display: flex;
+
+.lis-router {
+  display: flex;
 }
 
 .fleft {
@@ -127,14 +125,14 @@ export default {
 }
 
 .fr-span {
-	display: inline-block;
+  display: inline-block;
   font-size: 0.88rem;
   font-weight: bold;
-	overflow: hidden;
-	text-align: left;
+  overflow: hidden;
+  text-align: left;
   width: 172px;
   text-overflow: ellipsis;
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .fright .img1 {
@@ -181,7 +179,7 @@ export default {
 
 .fr3 {
   width: 100%;
-	margin:6px 0 3px;
+  margin: 6px 0 3px;
 }
 
 .fr3-list {
@@ -201,7 +199,7 @@ export default {
   margin-top: 8px;
   display: flex;
   max-height: 17px;
-	text-align: left;
+  text-align: left;
 }
 
 .faddr {
@@ -218,17 +216,19 @@ export default {
   color: #578aff;
   min-width: 60px;
 }
-.fr5{
-	margin-top: 7px;
+
+.fr5 {
+  margin-top: 7px;
 }
-.gift{
-	display: inline-block;
-	padding:1px 2px;
-	border:1px solid red;
-	color: red;
-	border-radius:2px;
-	font-size: 0.555rem;
-	margin-right: 5px;
-	margin-top: -3px;
+
+.gift {
+  display: inline-block;
+  padding: 1px 2px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 2px;
+  font-size: 0.555rem;
+  margin-right: 5px;
+  margin-top: -3px;
 }
 </style>

@@ -157,170 +157,196 @@
 
 <script>
 export default {
-  data(){
-    return{
-      elects:'',
-      evals:'',
-      econtent:'',
-      userlist:'',
-      case1:'',
-      abouts:'',
-      smsg:'',
-      isshow:true,
-      hshow:true
+  data() {
+    return {
+      elects: '',
+      evals: '',
+      econtent: '',
+      userlist: '',
+      case1: '',
+      abouts: '',
+      smsg: '',
+      isshow: true,
+      hshow: true
     }
   },
-  methods:{
-    change(){
-      this.isshow=!this.isshow;
-      this.hshow=!this.hshow;
+  methods: {
+    change() {
+      this.isshow = !this.isshow;
+      this.hshow = !this.hshow;
     }
   },
   mounted() {
     this.$http.get('./data/detail.json')
-    .then((response) => {
-      this.elects = response.data.elects;
-      this.evals = response.data.evals;
-      this.econtent = response.data.econtent;
-      this.userlist = response.data.userlist;
-      this.imgs = response.data.imgs;
-      this.case1 = response.data.case1;
-      this.abouts = response.data.abouts;
-      this.smsg = response.data.smsg;
-    })
-    .catch(function(error) {
-      console.log(error);
-    })
-    .then(function() {});
+      .then((response) => {
+        this.elects = response.data.elects;
+        this.evals = response.data.evals;
+        this.econtent = response.data.econtent;
+        this.userlist = response.data.userlist;
+        this.imgs = response.data.imgs;
+        this.case1 = response.data.case1;
+        this.abouts = response.data.abouts;
+        this.smsg = response.data.smsg;
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
+      .then(function() {});
   }
 }
 </script>
 <style>
-.tab-item{
+.tab-item {
   background: #fff;
-  padding:0 16px;
+  padding: 0 16px;
   margin-bottom: 10px;
 }
-.tab-title{
+
+.tab-title {
   font-size: 0.777rem;
   color: #999999;
   display: flex;
   padding: 20px 0 6px;
   justify-content: space-between;
 }
-.tab-title h4{
+
+.tab-title h4 {
   font-size: 0.722rem;
   color: #000000;
   font-weight: bold;
 }
-.tright{
+
+.tright {
   text-align: left;
 }
-.tright h4{
+
+.tright h4 {
   font-size: 0.888rem;
   color: #333333;
   font-weight: bold;
 }
-.elect-a,.tprices{
+
+.elect-a,
+.tprices {
   display: flex;
   justify-content: space-between;
 }
-.elect-a{
+
+.elect-a {
   padding: 14px 16px 14px 0;
   border-bottom: 1px solid #eee;
 }
-.tleft{
+
+.tleft {
   width: 52%;
   margin-right: 10px;
 }
-.tleft img{
+
+.tleft img {
   width: 100%;
 }
-.tprices{
-  margin-top:12px;
+
+.tprices {
+  margin-top: 12px;
 }
-.tprice{
+
+.tprice {
   color: #f83244;
   font-size: 0.888rem;
   font-weight: bold;
 }
 </style>
 <style scoped>
-.tab-one{
+.tab-one {
   background: #fff;
-  padding:10px 16px;
+  padding: 10px 16px;
   text-align: left;
   margin-bottom: 10px;
 }
-.one-top,.one-bottom{
+
+.one-top,
+.one-bottom {
   font-size: 0.777rem;
   position: relative;
-  padding:16px 0 8px;
+  padding: 16px 0 8px;
 }
-.one-top{
-  padding:8px 0 30px;
+
+.one-top {
+  padding: 8px 0 30px;
   border-bottom: 1px solid #eee;
 }
-.one-bor{
+
+.one-bor {
   color: red;
-  padding:2px;
+  padding: 2px;
   font-size: 10px;
   display: inline-block;
-  margin:0 10px 4px 0;
-  border:1px solid red;
+  margin: 0 10px 4px 0;
+  border: 1px solid red;
 }
-.one-right{
+
+.one-right {
   color: #999999;
   font-size: 0.722rem;
   position: absolute;
   right: 0;
   bottom: 10px;
 }
-.collect{
+
+.collect {
   font-size: 0.666rem;
   color: #666;
 }
-.questions{
+
+.questions {
   border-bottom: 1px solid #eee;
   padding-bottom: 19px;
 }
-.question-lis{
+
+.question-lis {
   font-size: 0.833rem;
   text-align: left;
-  padding:16px 0;
+  padding: 16px 0;
 }
-.qbold{
+
+.qbold {
   font-weight: bold;
 }
-.qone,.qtwo{
+
+.qone,
+.qtwo {
   display: inline-block;
   width: 14px;
   margin-right: 5px;
   height: 14px;
 }
-.qone{
+
+.qone {
   background: url('../../../src/assets/images/ques1.png') 0 0 no-repeat;
   background-size: 100% 100%;
 }
-.qtwo{
+
+.qtwo {
   margin-top: 10px;
   background: url('../../../src/assets/images/ques2.png') 0 0 no-repeat;
   background-size: 100% 100%;
 }
 
-.evaluate span{
+.evaluate span {
   color: #f83244;
   font-size: 0.722rem;
 }
-.eval-list{
+
+.eval-list {
   text-align: left;
   display: flex;
   flex-wrap: wrap;
   height: 72px;
   overflow: hidden;
-  padding:10px 0;
+  padding: 10px 0;
 }
-.eval-list li{
+
+.eval-list li {
   height: 26px;
   line-height: 26px;
   margin-right: 8px;
@@ -330,63 +356,77 @@ export default {
   border-radius: 2px;
   font-size: 0.722rem;
 }
-.more{
+
+.more {
   padding-top: 4px;
   border-top: 1px solid #e7e7e7;
 }
-.more span{
+
+.more span {
   font-size: 1.2rem;
   color: rgb(170, 170, 170);
 }
-.changeHeight{
+
+.changeHeight {
   height: 180px;
 }
-.ec-list>li{
+
+.ec-list>li {
   padding: 16px 0;
   border-bottom: 1px solid #e7e7e7;
 }
-.eone{
+
+.eone {
   display: flex;
   justify-content: space-between;
 }
-.eimg1{
+
+.eimg1 {
   width: 14%;
 }
-.eimg1 img{
+
+.eimg1 img {
   width: 42px;
   height: 42px;
   border-radius: 50%;
 }
-.euser{
+
+.euser {
   text-align: left;
   width: 86%;
   margin-left: 10px;
 }
-.euser>p{
+
+.euser>p {
   color: #000000;
   font-size: 0.777rem;
   margin-bottom: 6px;
 }
-.euser-list{
+
+.euser-list {
   display: flex;
   font-size: 0.666rem;
   color: #666;
   justify-content: space-between;
 }
-.euser-list li{
+
+.euser-list li {
   width: 33%;
 }
-.euser-list li:nth-child(1){
+
+.euser-list li:nth-child(1) {
   width: 24%;
   margin-top: 2px;
   border-right: 2px solid #ccc;
 }
-.euser-list li:nth-child(2){
+
+.euser-list li:nth-child(2) {
   color: #f83244;
   border-right: 2px solid #ccc;
 }
-.eval-txt{
-  margin:13px 0;
+
+.eval-txt {
+  margin: 13px 0;
   font-size: 0.833rem;
   color: #000000;
   line-height: 1.23rem;
@@ -396,37 +436,44 @@ export default {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.eimg2-box,.eimg2-box1{
+
+.eimg2-box,
+.eimg2-box1 {
   width: 100%;
   overflow: hidden;
   overflow-x: auto;
   padding-right: 0px;
 }
-.eimg2-list{
+
+.eimg2-list {
   display: flex;
 }
-.eimg2-box .eimg2-list{
+
+.eimg2-box .eimg2-list {
   width: 300%;
 }
 
-.eimg2-box1 .eimg2-list{
+.eimg2-box1 .eimg2-list {
   width: 167%;
 }
 
-.eimg2-list li{
+.eimg2-list li {
   width: 32.6%;
   margin-right: 2px;
   overflow: hidden;
 }
-.eimg2-list li img{
+
+.eimg2-list li img {
   width: 100%;
 }
-.look{
+
+.look {
   font-size: 0.777rem;
   color: #578aff;
   padding: 10px 0 20px;
 }
-.tdate{
+
+.tdate {
   font-size: 0.666rem;
   color: #666666;
 }

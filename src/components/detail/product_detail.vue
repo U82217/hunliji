@@ -94,18 +94,48 @@
         <mt-popup
           v-model="popupVisible"
           position="bottom">
-          <div class="pr-mone">
-            <div class="prone-img">
-              <img src="../../assets/images/add1.jpg" alt="">
-            </div>
-            <div class="mprice">
-              <span class="addprice">￥118</span>
-              <span class="choose">请选择款式 颜色 尺码</span>
-            </div>
-            <span class="addclose">X</span>
-          </div>
-          <div class="pr-confirm">
-            <span>确定</span>
+          <div class="add-wrap">
+              <div class="add-one">
+                  <div class="img-box">
+                    <img src="../../assets/images/add1.jpg" alt="">
+                  </div>
+                  <div class="mprice">
+                    <span class="addprice">￥118</span>
+                    <span class="choose">请选择款式 颜色 尺码</span>
+                  </div>
+                  <span class="addclose" @click="confirm()">X</span>
+              </div>
+
+              <div class="add-two">
+                  <span class="txt">颜色</span>
+                  <ul class="color-list">
+                      <li>
+                          <img src="../../assets/images/add1.jpg" alt="">
+                          <span>蓝灰色</span>
+                      </li>
+                      <li>
+                          <img src="../../assets/images/add2.jpg" alt="">
+                          <span>豆沙色</span>
+                      </li>
+                  </ul>
+              </div>
+              <div class="add-three">
+                  <span class="txt">尺码</span>
+                  <ul class="size-list">
+                      <li v-for="(v,i) in sizelis">{{v}}</li>
+                  </ul>
+              </div>
+              <div class="add-four">
+                  <span class="txt">数量</span>
+                  <div>
+                      <span class="iconfont icon-jian del" @click="del()"></span>
+                      <span>{{this.$store.state.num}}</span>
+                      <span class="iconfont icon-jia add"  @click="addcar()"></span>
+                  </div>
+              </div>
+              <div class="pr-confirm">
+              <span @click="confirm()">确定</span>
+              </div>
           </div>
         </mt-popup>
       </div>
@@ -115,13 +145,13 @@
 </template>
 
 <script>
-import { Toast } from "mint-ui";
+import {Toast} from "mint-ui";
 export default {
   data() {
     return {
       pdlist: '',
       imgs: '',
-      isshow:false,
+      isshow: false,
       popupVisible: false,
       swiperOption: {
         loop: true,
@@ -135,20 +165,30 @@ export default {
           clickable: true
         }
       },
-      toastInstanse:null
+      toastInstanse: null,
+      sizelis:['XS','S','M','L','XL','XXL']
     }
   },
-  methods:{
-    add(){
-       this.$store.commit('add');
-       this.isshow=true;
-       this.popupVisible = !this.popupVisible;
-       this.toastInstanse = Toast({
-        message: "成功加入购物车", //弹窗内容
-        position: "bottom", //弹窗位置
-        className: "mytoast" //自定义Toast 样式，需要自己提供一个类名
+  methods: {
+    add() {
+      this.$store.commit('add');
+      this.isshow = true;
+      this.popupVisible = !this.popupVisible;
+      this.toastInstanse = Toast({
+        message: "成功加入购物车",
+        position: "bottom",
+        className: "mytoast"
       });
-     }
+    },
+    addcar(){
+      this.$store.commit('add');
+    },
+    del(){
+      this.$store.commit('del');
+    },
+    confirm(){
+      this.popupVisible=false;
+    }
   },
   mounted() {
     this.$http.get('./data/buy.json')
@@ -168,10 +208,12 @@ export default {
   opacity: 1;
   background: #fff;
 }
-.pr-modal .mint-popup{
+
+.pr-modal .mint-popup {
   width: 100%;
 }
-.mytoast{
+
+.mytoast {
   margin-bottom: 50px;
   line-height: 50px;
 }
@@ -437,20 +479,23 @@ export default {
   color: #fff;
   /* display:none; */
 }
-.pr-mone{
+.add-wrap{
+  padding:0.778rem 0.666rem;
+}
+.add-one{
   background: #fff;
   width: 100%;
   display: flex;
   align-items: center;
-  padding:0.778rem 0.666rem;
+  padding-bottom: 0.778rem;
   border-bottom:1px solid #ccc;
 }
-.prone-img{
+.img-box{
   width: 100px;
   border-radius: 8px;
   overflow: hidden;
 }
-.prone-img img{
+.img-box img{
   width: 100%;
   height: 100%;
   margin-bottom: -5px;
@@ -494,5 +539,65 @@ export default {
   font-size: 0.883rem;
   background: #f83244;
 }
+.add-two,.add-three{
+    text-align: left;
+    padding:0.6rem 0 0.8rem;
+    border-bottom:1px solid #ccc;
+}
+.txt{
+    font-size: 0.8rem;
+    display: inline-block;
+    padding-bottom: 0.33rem;
+}
+.color-list,.size-list{
+    display: flex;
+}
+.color-list li{
+    width: 80px;
+    height: 46px;
+    align-items: center;
+    display: flex;
+    font-size: 0.666rem;
+    border-radius: 6px;
+    background: #eee;
+    margin-right: 0.555rem;
+    padding:0 0.2rem;
+}
+.ccurr{
+  border:1px solid #f83244;
+}
+.color-list img{
+    width:40px;
+    margin-right: 4px;
+}
+.size-list li{
+    width: 30px;
+    height: 26px;
+    margin-right: 0.555rem;
+    background: #eee;
+    font-size: 0.666rem;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 26px;
+}
+.scurr{
+  border: 1px solid #f83244;
+}
+.add-four{
+    display: flex;
+    justify-content: space-between;
+    margin-top:0.888rem;
+}
 
+.add,.del{
+  font-weight:bold;
+  color: #999999;
+}
+.number{
+  width: 20px;
+  font-size: 0.666rem;
+}
+.add{
+  font-size: 1.1rem;
+}
 </style>

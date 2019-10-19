@@ -1,113 +1,112 @@
 <template id="">
-  <main class="home-body">
-        <div class="download">
-        <div class="close"></div>
-        <div class="download-title">
-            <div class="img-logo"></div>
-            <div>
-            <p>免费制作请帖、结婚分期付款</p>
-            <span>一站解决备婚难题</span>
-            </div>
-        </div>
-        <div class="download-now">
-            <router-link to="/download" class="download-a">
-                立即下载
-            </router-link>
-        </div>
-        </div>
+<main class="home-body">
+  <div class="download">
+    <div class="close"></div>
+    <div class="download-title">
+      <div class="img-logo"></div>
+      <div>
+        <p>免费制作请帖、结婚分期付款</p>
+        <span>一站解决备婚难题</span>
+      </div>
+    </div>
+    <div class="download-now">
+      <router-link to="/download" class="download-a">
+        立即下载
+      </router-link>
+    </div>
+  </div>
 
-        <!-- 导航 -->
-        <mynav></mynav>
-        <ul class="place">
-            <li class="place-one">
-                <h3>国内热门旅拍地</h3>
-                <ul class="country-list">
-                    <li  v-for="(v,i) in country">
-                        <img :src="v.src" alt="">
-                        <p>{{v.title}}</p>
-                    </li>
-                </ul>
-            </li>
-            <li class="place-two palce-top">
-                <h3>海外热门旅拍地</h3>
-                <ul class="forign-list">
-                    <li v-for="(v,i) in forign">
-                        <img :src="v.src" alt="">
-                        <p>{{v.title}}</p>
-                    </li>
-                </ul>
-            </li>
-            <li class="place-three palce-top">
-                <h3>人气旅拍商家</h3>
-                <div class="hot-wrap">
-                    <ul class="hot-list">
-                        <li v-for="(item,index) in hotlis">
-                            <img :src="item.src" alt="">
-                            <div class="hs-title">{{item.title}}</div>
-                            <ul>
-                                <li v-for="(v,i) in item.bg " class="bgs" :style="item.bg"></li>
-                            </ul>
-                            <p class="comment">{{item.comments}}</p>
-                            <span class="hot-icon"></span>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="place-four palce-top">
-                <h3>帮你选</h3>
-                <div class="special">
-                    <ul class="spe-lis">
-                        <li v-for="(v,i) in slist"  @click="change(i)" :class="{active:cur==i}">
-                            <h4 class="htitle">{{v.htitle}}</h4>
-                            <span class="stitle">{{v.stitle}}</span>
-                        </li>
-                    </ul>
-                </div>
-            </li>
+  <!-- 导航 -->
+  <mynav></mynav>
+  <ul class="place">
+    <li class="place-one">
+      <h3>国内热门旅拍地</h3>
+      <ul class="country-list">
+        <li v-for="(v,i) in country">
+          <img :src="v.src" alt="">
+          <p>{{v.title}}</p>
+        </li>
+      </ul>
+    </li>
+    <li class="place-two palce-top">
+      <h3>海外热门旅拍地</h3>
+      <ul class="forign-list">
+        <li v-for="(v,i) in forign">
+          <img :src="v.src" alt="">
+          <p>{{v.title}}</p>
+        </li>
+      </ul>
+    </li>
+    <li class="place-three palce-top">
+      <h3>人气旅拍商家</h3>
+      <div class="hot-wrap">
+        <ul class="hot-list">
+          <li v-for="(item,index) in hotlis">
+            <img :src="item.src" alt="">
+            <div class="hs-title">{{item.title}}</div>
+            <ul>
+              <li v-for="(v,i) in item.bg " class="bgs" :style="item.bg"></li>
+            </ul>
+            <p class="comment">{{item.comments}}</p>
+            <span class="hot-icon"></span>
+          </li>
         </ul>
-        <ul class="help-list">
-                    <li v-for="(v,i) in helplis">
-                        <div class="himg">
-                            <img :src="v.src" alt="">
-                            <span class="play"></span>
-                        </div>
-                        <h4 class="mh4">{{v.title}}</h4>
-                        <div class="htex">
-                            <div class="hleft">
-                                <span class="span1">{{v.span1}}</span>
-                                <span class="span2">{{v.span2}}</span>
-                                <span class="hbg"></span>
-                            </div>
-                            <span class="hprice">{{v.hprice}}</span>
-                        </div>
-                    </li>
-                </ul>
-    </main>
+      </div>
+    </li>
+    <li class="place-four palce-top">
+      <h3>帮你选</h3>
+      <div class="special">
+        <ul class="spe-lis">
+          <li v-for="(v,i) in slist" @click="change(i)" :class="{active:cur==i}">
+            <h4 class="htitle">{{v.htitle}}</h4>
+            <span class="stitle">{{v.stitle}}</span>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <ul class="help-list">
+    <li v-for="(v,i) in helplis">
+      <div class="himg">
+        <img :src="v.src" alt="">
+        <span class="play"></span>
+      </div>
+      <h4 class="mh4">{{v.title}}</h4>
+      <div class="htex">
+        <div class="hleft">
+          <span class="span1">{{v.span1}}</span>
+          <span class="span2">{{v.span2}}</span>
+          <span class="hbg"></span>
+        </div>
+        <span class="hprice">{{v.hprice}}</span>
+      </div>
+    </li>
+  </ul>
+</main>
 </template>
-
 
 <script>
 import nav from './nav-one.vue';
-export default{
-    components:{
-        'mynav':nav
-    },
-    data(){
-        return{
-            country:'',
-            forign:'',
-            hotlis:'',
-            slist:'',
-            helplis:'',
-            cur: 0,
-        }
-    },
-    methods:{
-        change(i) {
-            this.cur = i;
-        }
-    },
-   mounted() {
+export default {
+  components: {
+    'mynav': nav
+  },
+  data() {
+    return {
+      country: '',
+      forign: '',
+      hotlis: '',
+      slist: '',
+      helplis: '',
+      cur: 0,
+    }
+  },
+  methods: {
+    change(i) {
+      this.cur = i;
+    }
+  },
+  mounted() {
     this.$http.get('./data/products.json')
       .then((response) => {
         this.country = response.data.country;
@@ -120,10 +119,10 @@ export default{
         console.log(error);
       })
       .then(function() {});
-      $('.close').click(function(){
-        $('.download').remove();
-        $('.home-body').css('margin-top','0px');
-      })
+    $('.close').click(function() {
+      $('.download').remove();
+      $('.home-body').css('margin-top', '0px');
+    })
   }
 }
 </script>
@@ -226,7 +225,7 @@ export default{
         padding-left: 16px;
         text-align: left;
     }
-    
+
     .place-two li{
         width: 25%;
         margin-top: 16px;
@@ -336,7 +335,7 @@ export default{
         margin-bottom:24px;
     }
     .himg{
-        width: 100%; 
+        width: 100%;
         border-radius: 15px;
         overflow: hidden;
         position: relative;

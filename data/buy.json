@@ -1,175 +1,170 @@
 {
-  "blist":[
-    {
-      "src":"./data/images/bbanner1.jpg"
+  "blist": [{
+      "src": "./data/images/bbanner1.jpg"
     },
     {
-      "src":"./data/images/bbanner2.jpg"
+      "src": "./data/images/bbanner2.jpg"
     },
     {
-      "src":"./data/images/bbanner3.jpg"
+      "src": "./data/images/bbanner3.jpg"
     },
     {
-      "src":"./data/images/bbanner4.jpg"
+      "src": "./data/images/bbanner4.jpg"
     },
     {
-      "src":"./data/images/bbanner5.jpg"
+      "src": "./data/images/bbanner5.jpg"
     }
 
   ],
-  "blist1":[
-    {
-      "src":"./data/images/buy1.png",
-      "title":"新娘礼服",
-			"path":""
+  "blist1": [{
+      "src": "./data/images/buy1.png",
+      "title": "新娘礼服",
+      "path": ""
     },
     {
-      "src":"./data/images/buy2.png",
-      "title":"婚房布置",
-			"path":""
+      "src": "./data/images/buy2.png",
+      "title": "婚房布置",
+      "path": ""
     },
     {
-      "src":"./data/images/buy3.png",
-      "title":"喜糖请柬",
-			"path":""
+      "src": "./data/images/buy3.png",
+      "title": "喜糖请柬",
+      "path": ""
     },
     {
-      "src":"./data/images/buy4.png",
-      "title":"婚鞋婚包",
-			"path":""
+      "src": "./data/images/buy4.png",
+      "title": "婚鞋婚包",
+      "path": ""
     },
     {
-      "src":"./data/images/buy5.png",
-      "title":"接亲婚宴",
-			"path":""
+      "src": "./data/images/buy5.png",
+      "title": "接亲婚宴",
+      "path": ""
     },
     {
-      "src":"./data/images/buy6.png",
-      "title":"婚庆床品",
-			"path":""
+      "src": "./data/images/buy6.png",
+      "title": "婚庆床品",
+      "path": ""
     },
     {
-      "src":"./data/images/buy7.png",
-      "title":"新娘嫁妆",
-			"path":""
+      "src": "./data/images/buy7.png",
+      "title": "新娘嫁妆",
+      "path": ""
     },
     {
-      "src":"./data/images/buy8.png",
-      "title":"新郎穿搭",
-			"path":""
+      "src": "./data/images/buy8.png",
+      "title": "新郎穿搭",
+      "path": ""
     },
     {
-      "src":"./data/images/buy9.png",
-      "title":"睡衣睡裤",
-			"path":""
+      "src": "./data/images/buy9.png",
+      "title": "睡衣睡裤",
+      "path": ""
     },
     {
-      "src":"./data/images/buy10.png",
-      "title":"新娘美护",
-			"path":""
+      "src": "./data/images/buy10.png",
+      "title": "新娘美护",
+      "path": ""
     }
   ],
-  "pdlist":[
-    {
-      "src":"./data/images/pbanner1.jpg"
+  "pdlist": [{
+      "src": "./data/images/pbanner1.jpg"
     },
     {
-      "src":"./data/images/pbanner2.jpg"
+      "src": "./data/images/pbanner2.jpg"
     },
     {
-      "src":"./data/images/pbanner3.jpg"
+      "src": "./data/images/pbanner3.jpg"
     },
     {
-      "src":"./data/images/pbanner4.jpg"
+      "src": "./data/images/pbanner4.jpg"
     },
     {
-      "src":"./data/images/pbanner5.jpg"
+      "src": "./data/images/pbanner5.jpg"
     },
     {
-      "src":"./data/images/pbanner6.jpg"
+      "src": "./data/images/pbanner6.jpg"
     },
     {
-      "src":"./data/images/pbanner7.jpg"
+      "src": "./data/images/pbanner7.jpg"
     }
   ],
-  "imgs":[
-    {
-      "src":"./data/images/pr1.jpg"
+  "imgs": [{
+      "src": "./data/images/pr1.jpg"
     },
     {
-      "src":"./data/images/pr2.jpg"
+      "src": "./data/images/pr2.jpg"
     },
     {
-      "src":"./data/images/pr3.jpg"
+      "src": "./data/images/pr3.jpg"
     },
     {
-      "src":"./data/images/pr4.jpg"
+      "src": "./data/images/pr4.jpg"
     },
     {
-      "src":"./data/images/pr5.jpg"
+      "src": "./data/images/pr5.jpg"
     },
     {
-      "src":"./data/images/pr6.jpg"
+      "src": "./data/images/pr6.jpg"
     },
     {
-      "src":"./data/images/pr7.jpg"
+      "src": "./data/images/pr7.jpg"
     },
     {
-      "src":"./data/images/pr8.jpg"
+      "src": "./data/images/pr8.jpg"
     },
     {
-      "src":"./data/images/pr9.jpg"
+      "src": "./data/images/pr9.jpg"
     },
     {
-      "src":"./data/images/pr10.jpg"
+      "src": "./data/images/pr10.jpg"
     },
     {
-      "src":"./data/images/pr11.jpg"
+      "src": "./data/images/pr11.jpg"
     },
     {
-      "src":"./data/images/pr12.jpg"
+      "src": "./data/images/pr12.jpg"
     },
     {
-      "src":"./data/images/pr13.jpg"
+      "src": "./data/images/pr13.jpg"
     },
     {
-      "src":"./data/images/pr14.jpg"
+      "src": "./data/images/pr14.jpg"
     },
     {
-      "src":"./data/images/pr15.jpg"
+      "src": "./data/images/pr15.jpg"
     },
     {
-      "src":"./data/images/pr20.jpg"
+      "src": "./data/images/pr20.jpg"
     },
     {
-      "src":"./data/images/pr16.jpg"
+      "src": "./data/images/pr16.jpg"
     },
     {
-      "src":"./data/images/pr17.jpg"
+      "src": "./data/images/pr17.jpg"
     },
     {
-      "src":"./data/images/pr18.jpg"
+      "src": "./data/images/pr18.jpg"
     },
     {
-      "src":"./data/images/pr19.jpg"
+      "src": "./data/images/pr19.jpg"
     }
   ],
-  "carlis":[
-    {
-      "src":"./data/images/go1.jpg",
-      "title":"韩式清新显瘦百变伴娘服",
-      "size":"A款，蓝灰色，M",
-      "price":"118",
-      "deprice":"￥198",
-      "num":1
+  "carlis": [{
+      "src": "./data/images/go1.jpg",
+      "title": "韩式清新显瘦百变伴娘服",
+      "size": "A款，蓝灰色，M",
+      "price": "118",
+      "deprice": "￥198",
+      "num": 1
     },
     {
-      "src":"./data/images/go2.jpg",
-      "title":"锦绣系列•凤凰中式秀禾服",
-      "size":"规格：奢华百褶加钻",
-      "price":"457",
-      "deprice":"￥508",
-      "num":1
+      "src": "./data/images/go2.jpg",
+      "title": "锦绣系列•凤凰中式秀禾服",
+      "size": "规格：奢华百褶加钻",
+      "price": "457",
+      "deprice": "￥508",
+      "num": 1
     }
   ]
 }

@@ -1,191 +1,184 @@
 {
-  "elects":[
-    {
-      "src":"./data/images/d1.jpg",
-      "title":"『后古旅拍』新趋势ins风+送底片",
-      "price":"￥4999",
-      "collect":"收藏540",
-       "path":""
+  "elects": [{
+      "src": "./data/images/d1.jpg",
+      "title": "『后古旅拍』新趋势ins风+送底片",
+      "price": "￥4999",
+      "collect": "收藏540",
+      "path": ""
     },
     {
-      "src":"./data/images/d2.jpg",
-      "title":"【团队升级】立减1200 总监团队",
-      "price":"￥8688",
-      "collect":"收藏46",
-       "path":""
+      "src": "./data/images/d2.jpg",
+      "title": "【团队升级】立减1200 总监团队",
+      "price": "￥8688",
+      "collect": "收藏46",
+      "path": ""
     },
     {
-      "src":"./data/images/d3.jpg",
-      "title":"【轻旅拍】减2000 ins风 送酒店",
-      "price":"￥8399",
-      "collect":"收藏177",
-       "path":""
+      "src": "./data/images/d3.jpg",
+      "title": "【轻旅拍】减2000 ins风 送酒店",
+      "price": "￥8399",
+      "collect": "收藏177",
+      "path": ""
     }
   ],
-  "products":[
-    {
-      "src":"./data/images/d1.jpg",
-      "title":"『后古旅拍』新趋势ins风+送底片",
-      "price":"￥4999",
-       "path":""
+  "products": [{
+      "src": "./data/images/d1.jpg",
+      "title": "『后古旅拍』新趋势ins风+送底片",
+      "price": "￥4999",
+      "path": ""
     },
     {
-      "src":"./data/images/d2.jpg",
-      "title":"【团队升级】立减1200 总监团队",
-      "price":"￥8688",
-       "path":""
+      "src": "./data/images/d2.jpg",
+      "title": "【团队升级】立减1200 总监团队",
+      "price": "￥8688",
+      "path": ""
     },
     {
-      "src":"./data/images/d3.jpg",
-      "title":"【轻旅拍】减2000 ins风 送酒店",
-      "price":"￥8399",
-       "path":""
+      "src": "./data/images/d3.jpg",
+      "title": "【轻旅拍】减2000 ins风 送酒店",
+      "price": "￥8399",
+      "path": ""
     },
     {
-      "src":"./data/images/d4.jpg",
-      "title":"【奢华潮殿】+2天拍摄+MV花絮",
-      "price":"￥28399",
-       "path":""
+      "src": "./data/images/d4.jpg",
+      "title": "【奢华潮殿】+2天拍摄+MV花絮",
+      "price": "￥28399",
+      "path": ""
     },
     {
-      "src":"./data/images/d5.jpg",
-      "title":"【总监掌镜】立减1w+全景拍摄",
-      "price":"￥16399",
-       "path":""
+      "src": "./data/images/d5.jpg",
+      "title": "【总监掌镜】立减1w+全景拍摄",
+      "price": "￥16399",
+      "path": ""
     },
     {
-      "src":"./data/images/d6.jpg",
-      "title":"【轻旅拍】减2000 ins风 送酒店",
-      "price":"￥8399",
-       "path":""
+      "src": "./data/images/d6.jpg",
+      "title": "【轻旅拍】减2000 ins风 送酒店",
+      "price": "￥8399",
+      "path": ""
     },
     {
-      "src":"./data/images/d7.jpg",
-      "title":"【轻旅拍】减2000 ins风 送酒店",
-      "price":"￥8399",
-       "path":""
+      "src": "./data/images/d7.jpg",
+      "title": "【轻旅拍】减2000 ins风 送酒店",
+      "price": "￥8399",
+      "path": ""
     },
     {
-      "src":"./data/images/d8.jpg",
-      "title":"【轻旅拍】减2000 ins风 送酒店",
-      "price":"￥8399",
-       "path":""
+      "src": "./data/images/d8.jpg",
+      "title": "【轻旅拍】减2000 ins风 送酒店",
+      "price": "￥8399",
+      "path": ""
     },
     {
-      "src":"./data/images/d9.jpg",
-      "title":"【轻旅拍】减2000 ins风 送酒店",
-      "price":"￥8399",
-       "path":""
+      "src": "./data/images/d9.jpg",
+      "title": "【轻旅拍】减2000 ins风 送酒店",
+      "price": "￥8399",
+      "path": ""
     },
     {
-      "src":"./data/images/d10.jpg",
-      "title":"【轻旅拍】减2000 ins风 送酒店",
-      "price":"￥8399",
-       "path":""
+      "src": "./data/images/d10.jpg",
+      "title": "【轻旅拍】减2000 ins风 送酒店",
+      "price": "￥8399",
+      "path": ""
     }
   ],
-  "evals":["全部","有图563","好评2270","服务热情1018","化妆师耐心953","摄影师专业940","售后周到884","性价比高225","效果自然224","取景美214","店里环境好180","衣服好看178","总体不错167"],
-  "econtent":[
-    {
-      "src":"./data/images/u1.png",
-      "username":"手机用户2606",
-      "userlist":["2019-10-05","5星 服务超预期","我买过这家套餐"],
-      "txt":"门店小姐姐接待的我们，了解了具体的套餐和看过客片以后，决定和老公在她们家拍。 然后化妆师非常好，满意她画的妆和耐心热情的服务。摄影师和他的助理积极和我们沟通，了解我们喜欢的照片风格。选片师小姐姐负责陪我们选片，全程没有购买压力。我和老公对整个团队服务非常满意。",
-      "imgs":[
-        {
-          "src":"./data/images/e1.jpg"
+  "evals": ["全部", "有图563", "好评2270", "服务热情1018", "化妆师耐心953", "摄影师专业940", "售后周到884", "性价比高225", "效果自然224", "取景美214", "店里环境好180", "衣服好看178", "总体不错167"],
+  "econtent": [{
+      "src": "./data/images/u1.png",
+      "username": "手机用户2606",
+      "userlist": ["2019-10-05", "5星 服务超预期", "我买过这家套餐"],
+      "txt": "门店小姐姐接待的我们，了解了具体的套餐和看过客片以后，决定和老公在她们家拍。 然后化妆师非常好，满意她画的妆和耐心热情的服务。摄影师和他的助理积极和我们沟通，了解我们喜欢的照片风格。选片师小姐姐负责陪我们选片，全程没有购买压力。我和老公对整个团队服务非常满意。",
+      "imgs": [{
+          "src": "./data/images/e1.jpg"
         },
         {
-          "src":"./data/images/e2.jpg"
+          "src": "./data/images/e2.jpg"
         },
         {
-          "src":"./data/images/e3.jpg"
+          "src": "./data/images/e3.jpg"
         }
       ]
     },
     {
-      "src":"./data/images/u2.png",
-      "username":"听海",
-      "userlist":["2019-10-04","5星 服务超预期","我买过这家套餐"],
-      "txt":"接待我们的美女很热情，介绍的也很全面，去拍照时，服装搭配的我们都很喜欢，化妆师把我媳妇捯饬的更漂亮了，摄影师诙谐幽默，很有耐心，教我们摆动作的同时逗我们自然的笑。",
-      "imgs":""
+      "src": "./data/images/u2.png",
+      "username": "听海",
+      "userlist": ["2019-10-04", "5星 服务超预期", "我买过这家套餐"],
+      "txt": "接待我们的美女很热情，介绍的也很全面，去拍照时，服装搭配的我们都很喜欢，化妆师把我媳妇捯饬的更漂亮了，摄影师诙谐幽默，很有耐心，教我们摆动作的同时逗我们自然的笑。",
+      "imgs": ""
     },
     {
-      "src":"./data/images/u1.png",
-      "username":"手机用户1147",
-      "userlist":["2019-10-05","5星 服务超预期","我买过这家套餐"],
-      "txt":"出来的照片也很好，会一直纠正我的动作姿势，摄影助理也很棒，一直帮我铺裙摆，拿道具，衣服上一点点的褶皱也会给我们拉平，还会一直提醒我们表情要放松，要笑，有很多的小道具，很放松，边玩边拍，一天的时间很充实也很快乐。",
-      "imgs":""
+      "src": "./data/images/u1.png",
+      "username": "手机用户1147",
+      "userlist": ["2019-10-05", "5星 服务超预期", "我买过这家套餐"],
+      "txt": "出来的照片也很好，会一直纠正我的动作姿势，摄影助理也很棒，一直帮我铺裙摆，拿道具，衣服上一点点的褶皱也会给我们拉平，还会一直提醒我们表情要放松，要笑，有很多的小道具，很放松，边玩边拍，一天的时间很充实也很快乐。",
+      "imgs": ""
     }
 
   ],
-  "case1":[
-    {
-      "src":"./data/images/case1.jpg",
-      "title":"HOUGU后古客片丨潮流厦门·世贸",
-      "date":"发布日期: 2019-09-29",
-      "collect":"收藏0",
-       "path":""
+  "case1": [{
+      "src": "./data/images/case1.jpg",
+      "title": "HOUGU后古客片丨潮流厦门·世贸",
+      "date": "发布日期: 2019-09-29",
+      "collect": "收藏0",
+      "path": ""
     },
     {
-      "src":"./data/images/case2.jpg",
-      "title":"HOUGU后古客片丨潮流厦门·阳湾",
-      "date":"发布日期: 2019-09-27",
-      "collect":"收藏0",
-       "path":""
+      "src": "./data/images/case2.jpg",
+      "title": "HOUGU后古客片丨潮流厦门·阳湾",
+      "date": "发布日期: 2019-09-27",
+      "collect": "收藏0",
+      "path": ""
     },
     {
-      "src":"./data/images/case3.jpg",
-      "title":"HOUGU后古客片丨潮流厦门·后山",
-      "date":"发布日期: 2019-09-26",
-      "collect":"收藏1",
-       "path":""
+      "src": "./data/images/case3.jpg",
+      "title": "HOUGU后古客片丨潮流厦门·后山",
+      "date": "发布日期: 2019-09-26",
+      "collect": "收藏1",
+      "path": ""
     }
   ],
-  "abouts":[
-    {
-      "src":"./data/images/about1.jpg"
+  "abouts": [{
+      "src": "./data/images/about1.jpg"
     },
     {
-      "src":"./data/images/about2.png"
+      "src": "./data/images/about2.png"
     },
     {
-      "src":"./data/images/about3.jpg"
+      "src": "./data/images/about3.jpg"
     },
     {
-      "src":"./data/images/about01.jpg"
+      "src": "./data/images/about01.jpg"
     },
     {
-      "src":"./data/images/about02.jpg"
+      "src": "./data/images/about02.jpg"
     },
     {
-      "src":"./data/images/about03.jpg"
+      "src": "./data/images/about03.jpg"
     },
     {
-      "src":"./data/images/about04.jpg"
+      "src": "./data/images/about04.jpg"
     },
     {
-      "src":"./data/images/about05.jpg"
+      "src": "./data/images/about05.jpg"
     },
     {
-      "src":"./data/images/about06.jpg"
+      "src": "./data/images/about06.jpg"
     }
   ],
-  "smsg":[
-    {
-      "src":"./data/images/about4.jpg"
+  "smsg": [{
+      "src": "./data/images/about4.jpg"
     },
     {
-      "src":"./data/images/about5.jpg"
+      "src": "./data/images/about5.jpg"
     },
     {
-      "src":"./data/images/about6.jpg"
+      "src": "./data/images/about6.jpg"
     },
     {
-      "src":"./data/images/about07.jpg"
+      "src": "./data/images/about07.jpg"
     },
     {
-      "src":"./data/images/about08.jpg"
+      "src": "./data/images/about08.jpg"
     }
   ]
 }

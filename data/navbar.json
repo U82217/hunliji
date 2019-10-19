@@ -1,117 +1,115 @@
 {
-    "navs":[
-        {
-            "src":"./data/images/nav1.png",
-            "title":"首页",
-            "path":"/home"
-        },
-        {
-            "src":"./data/images/nav2.png",
-            "title":"找商家",
-            "path":"/find"
-        },
-        {
-            "src":"./data/images/nav3.png",
-            "title":"案例",
-             "path":"/find"
-        },
-        {
-            "src":"./data/images/nav4.png",
-            "title":"套餐",
-             "path":"/find"
-        },
-        {
-            "src":"./data/images/nav5.png",
-            "title":"结婚请柬",
-             "path":"/find"
-        },
-        {
-            "src":"./data/images/nav6.png",
-            "title":"婚宴酒店",
-             "path":"/find"
-        },
-        {
-            "src":"./data/images/nav7.png",
-            "title":"结婚美图",
-             "path":"/find"
-        },
-        {
-            "src":"./data/images/nav8.png",
-            "title":"结婚百科",
-             "path":"/find"
-        },
-        {
-            "src":"./data/images/nav9.png",
-            "title":"结婚用品",
-             "path":"/buy_product"
-        },
-        {
-            "src":"./data/images/nav10.png",
-            "title":"问答",
-             "path":"/find"
-        },
-        {
-            "src":"./data/images/nav11.png",
-            "title":"婚礼视频",
-             "path":"/find"
-        },
-        {
-            "src":"./data/images/nav12.png",
-            "title":"新娘社区",
-             "path":"/find"
-        }
+  "navs": [{
+      "src": "./data/images/nav1.png",
+      "title": "首页",
+      "path": "/home"
+    },
+    {
+      "src": "./data/images/nav2.png",
+      "title": "找商家",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav3.png",
+      "title": "案例",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav4.png",
+      "title": "套餐",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav5.png",
+      "title": "结婚请柬",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav6.png",
+      "title": "婚宴酒店",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav7.png",
+      "title": "结婚美图",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav8.png",
+      "title": "结婚百科",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav9.png",
+      "title": "结婚用品",
+      "path": "/buy_product"
+    },
+    {
+      "src": "./data/images/nav10.png",
+      "title": "问答",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav11.png",
+      "title": "婚礼视频",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/nav12.png",
+      "title": "新娘社区",
+      "path": "/find"
+    }
 
-    ],
-    "classify":[
-      {
-        "src":"./data/images/cn1.png",
-        "title":"婚礼摄影",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn2.png",
-        "title":"婚礼策划",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn3.png",
-        "title":"婚纱礼服",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn4.png",
-        "title":"婚宴酒店",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn5.png",
-        "title":"婚戒首饰",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn6.png",
-        "title":"婚礼摄影",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn7.png",
-        "title":"婚礼摄像",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn8.png",
-        "title":"婚礼跟妆",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn9.png",
-        "title":"婚礼司仪",
-        "path":"/find"
-      },
-      {
-        "src":"./data/images/cn10.png",
-        "title":"花艺甜品",
-        "path":"/find"
-      }
-    ]
+  ],
+  "classify": [{
+      "src": "./data/images/cn1.png",
+      "title": "婚礼摄影",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn2.png",
+      "title": "婚礼策划",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn3.png",
+      "title": "婚纱礼服",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn4.png",
+      "title": "婚宴酒店",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn5.png",
+      "title": "婚戒首饰",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn6.png",
+      "title": "婚礼摄影",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn7.png",
+      "title": "婚礼摄像",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn8.png",
+      "title": "婚礼跟妆",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn9.png",
+      "title": "婚礼司仪",
+      "path": "/find"
+    },
+    {
+      "src": "./data/images/cn10.png",
+      "title": "花艺甜品",
+      "path": "/find"
+    }
+  ]
 }
