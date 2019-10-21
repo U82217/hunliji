@@ -52,6 +52,7 @@ export default {
 }
 .nc-list li img{
   width: 54%;
+  display: inline-block;
 }
 
 .nc-list span{
@@ -59,6 +60,5 @@ export default {
   color: #666;
   font-size: 0.611rem;
   text-align: center;
-  /* margin-bottom: 10px; */
 }
 </style>

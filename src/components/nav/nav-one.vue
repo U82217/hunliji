@@ -42,7 +42,7 @@ export default {
 .nav .mint-popup {
   width: 100%;
   position: absolute;
-  top: 298%;
+  top: 286%;
   transition: 0s;
 }
 

@@ -162,6 +162,7 @@ export default {
 
 .buy-list1 li img {
   width: 60%;
+  display: inline-block;
 }
 
 .buy-box {

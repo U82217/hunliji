@@ -97,11 +97,11 @@
           <div class="add-wrap">
               <div class="add-one">
                   <div class="img-box">
-                    <img src="../../assets/images/add1.jpg" alt="">
+                    <img :src="this.$store.state.src" alt="">
                   </div>
                   <div class="mprice">
                     <span class="addprice">￥118</span>
-                    <span class="choose">请选择款式 颜色 尺码</span>
+                    <span class="choose">{{this.$store.state.color}} {{this.$store.state.size}}</span>
                   </div>
                   <span class="addclose" @click="confirm()">X</span>
               </div>
@@ -109,20 +109,20 @@
               <div class="add-two">
                   <span class="txt">颜色</span>
                   <ul class="color-list">
-                      <li>
-                          <img src="../../assets/images/add1.jpg" alt="">
-                          <span>蓝灰色</span>
+                      <li @click="change()" :class="n==1? '':'ccurr' ">
+                          <img :src="this.$store.state.src1" alt="">
+                          <span>{{this.$store.state.color1}}</span>
                       </li>
-                      <li>
-                          <img src="../../assets/images/add2.jpg" alt="">
-                          <span>豆沙色</span>
+                      <li @click="choose()" :class="m==1? '':'ccurr' ">
+                          <img :src="this.$store.state.src2" alt="">
+                          <span>{{this.$store.state.color2}}</span>
                       </li>
                   </ul>
               </div>
               <div class="add-three">
                   <span class="txt">尺码</span>
                   <ul class="size-list">
-                      <li v-for="(v,i) in sizelis">{{v}}</li>
+                      <li v-for="(v,i) in sizelis" :class="active==i ? 'ccurr':'' " @click="size(v,i)">{{v}}</li>
                   </ul>
               </div>
               <div class="add-four">
@@ -152,6 +152,9 @@ export default {
       pdlist: '',
       imgs: '',
       isshow: false,
+      n:1,
+      m:1,
+      active:-1,
       popupVisible: false,
       swiperOption: {
         loop: true,
@@ -188,6 +191,20 @@ export default {
     },
     confirm(){
       this.popupVisible=false;
+    },
+    change(){
+        this.n=0;
+        this.m=1;
+        this.$store.commit('change')
+    },
+    choose(){
+      this.m=0;
+      this.n=1;
+      this.$store.commit('choose')
+    },
+    size(v,i){
+      this.active=i;
+      this.$store.commit('size',v)
     }
   },
   mounted() {
@@ -204,6 +221,9 @@ export default {
 }
 </script>
 <style>
+img{
+  display: inline-block;
+}
 #pd-banner .swiper-pagination-bullet-active {
   opacity: 1;
   background: #fff;
@@ -477,7 +497,6 @@ export default {
   border-radius: 50%;
   background-color: #f83244;
   color: #fff;
-  /* display:none; */
 }
 .add-wrap{
   padding:0.778rem 0.666rem;
@@ -563,8 +582,10 @@ export default {
     margin-right: 0.555rem;
     padding:0 0.2rem;
 }
+
 .ccurr{
   border:1px solid #f83244;
+  background: #fff;
 }
 .color-list img{
     width:40px;

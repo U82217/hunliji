@@ -53,7 +53,9 @@ a {
   color: #333;
   text-decoration: none;
 }
-
+img{
+  display: block;
+}
 body{
   overflow-x:hidden;
 }

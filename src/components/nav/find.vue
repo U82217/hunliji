@@ -165,6 +165,7 @@ export default {
 
 .fr2-list img {
   padding-right: 2px;
+  display: inline-block;
 }
 
 .fr2 .num {

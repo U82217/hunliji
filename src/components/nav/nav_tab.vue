@@ -1,7 +1,8 @@
 <template lang="html">
   <main :class="{fixtab:whether}">
     <ul class="nt-list">
-      <li v-for="(item,index) in ntlis"  @click="tab(index)" :class="{active:cur==index}">
+      <li v-for="(item,index) in ntlis"  @click="tab(index)">
+      <!-- <li v-for="(item,index) in ntlis"  @click="tab(index)" :class="{active:cur==index}"> -->
         <span>{{item}}</span>
         <i class="arrow"></i>
       </li>
@@ -13,7 +14,7 @@
         </ul>
       </div>
     </div>
-    <div  class="tab-bg"></div>
+    <div  class="tab-bg" @click.stop="bgClose()" v-show="bgShow"></div>
   </main>
 </template>
 
@@ -81,7 +82,8 @@ export default {
       ],
       cur: -1,
       whether: false,
-      hshow: true
+      hshow: true,
+      bgShow:false,
     }
   },
   methods: {
@@ -97,13 +99,23 @@ export default {
     tab(index) {
       this.cur = index;
       this.hshow = !this.hshow;
+    },
+    bgClose(){
+      this.hshow = !this.hshow;
+      this.bgShow=!this.bgShow;
     }
   },
   mounted() {
     $('.nt-list li').click(function() {
         $(this).children('i').toggleClass('arrow1').parent().siblings().children('i').removeClass('arrow1');
         $('.tab-bg').toggle();
+        $(this).toggleClass('active').siblings().removeClass('active');
       }),
+
+      $('.tab-bg').click(function(e){
+        $('.nt-list li').removeClass('active');
+        $('.nt-list li').children('i').removeClass('arrow1');
+      })
       window.addEventListener("scroll", this.handleScroll);
   }
 

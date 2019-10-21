@@ -63,15 +63,6 @@ export default {
       })
       .catch(function(error) {})
       .then(function() {});
-    // $('.mlogin').click(function(){
-    // 	  var user=$('.user').val();
-    // 		var re=/^1[35789]\d{9}$/;
-    // 		if (!re.test(user)) {
-    // 			return false;
-    // 		}
-    // 		window.location.href="/home"
-    // 		return true;
-    // })
   }
 }
 </script>

@@ -46,6 +46,7 @@ export default {
 
 .nav-ul li img {
   width: 80%;
+  display: inline-block;
 }
 
 .nav-ul li span {

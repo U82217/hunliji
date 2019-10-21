@@ -376,9 +376,10 @@ export default {
   content: '';
   display: block;
   width: 100%;
-  height: 29px;
+  height: 1.38rem;
   background: url('../assets/images/quxian.png') 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -715,10 +716,10 @@ export default {
 
 .guide-title {
   width: 56%;
-  padding: 16px 0 26px 0px;
+  padding: 0.888rem 0 1.5rem 0;
   text-align: left;
   background: url('../assets/images/glbg.png') 0 0 repeat-x;
-  background-size: 10px 100%;
+  background-size: 100% 100%;
   position: relative;
 }
 
@@ -735,8 +736,7 @@ export default {
 
 .guide-h4 {
   width: 90%;
-  height: 46px;
-  line-height: 1.277rem;
+  height: 2.555rem;
   font-size: 0.94rem;
   color: #000;
   font-weight: bold;
@@ -748,7 +748,7 @@ export default {
 }
 
 .guide-bottom {
-  margin-top: 12px;
+  margin-top: 8px;
   position: relative;
 
 }

@@ -8,7 +8,8 @@ import Vuex from 'vuex'
 import '../node_modules/swiper/dist/css/swiper.css'
 import '../node_modules/mint-ui/lib/style.css'
 import router from './assets/js/router.js'
-import store from '../src/assets/js/data.js'
+import store from './assets/js/data.js'
+
 import '../src/assets/css/cssreset.css'
 
 Vue.use(VueRouter);
